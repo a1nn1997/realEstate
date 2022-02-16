@@ -18,7 +18,7 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
           INR {50*price} {rentFrequency && `/${rentFrequency}`}
         </Text>
         <Spacer />
-        <Text  textAlign='center' fontSize='0.4g'>Predicted Price by Real Estate Price Predictor Api in INR is      <strong >{ 50*(Math.floor(Math.random() * (0.25*price) ) + 0.95*price)}{rentFrequency && `/${rentFrequency}`}</strong></Text>
+        <Text  textAlign='center' fontSize='0.4g'>Price Prediction in INR is      <strong >{ 50*(Math.floor(Math.random() * (0.25*price) ) + 0.95*price)}{rentFrequency && `/${rentFrequency}`}</strong></Text>
         <Spacer />
         <Avatar size='sm' src={agency?.logo?.url}></Avatar>
       </Flex>
