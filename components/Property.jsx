@@ -33,7 +33,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
           {title.length > 30 ? title.substring(0, 30) + '...' : title}
         </Text>
       </Box>
-      <Text  textAlign='center' fontSize='0.2g'>Predicted Price by Real Estate Price Predictor Api in INR is      <strong fontSize='0.4g'>{ 50*(Math.floor(Math.random() * (0.25*price) ) + 0.95*price)}{rentFrequency && `/${rentFrequency}`}</strong></Text>
+      <Text  textAlign='center' fontSize='0.2g'>Price Prediction in INR is      <strong fontSize='0.4g'>{ 50*(Math.floor(Math.random() * (0.25*price) ) + 0.95*price)}{rentFrequency && `/${rentFrequency}`}</strong></Text>
     </Flex>
   </Link>
 );
